@@ -1,0 +1,96 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+    /* Custom card styling */
+    .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+        transition: transform 0.2s ease-in-out;
+        margin-bottom: 20px; /* space between cards */
+    }
+
+    .card:hover {
+        transform: translateY(-5px); /* subtle hover effect */
+    }
+
+    .card-img-top {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; /* rounded corners for images */
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .card-text {
+        color: #555;
+        font-size: 0.95rem;
+    }
+
+    .card-footer {
+        background-color: transparent;
+        border-top: none;
+        text-align: right;
+    }
+
+    .card-footer a {
+        color: #6a11cb;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .card-footer a:hover {
+        text-decoration: underline;
+    }
+
+  
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Project image">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">The project idea is to create a unique solution to an existing problem using cutting-edge technology and innovation.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#">Click for more details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Project image">
+                <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">This card provides an overview of the project's goals and its potential impact on society.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Project image">
+                <div class="card-body">
+                    <h5 class="card-title">Project 3</h5>
+                    <p class="card-text">This is a wider card with supporting text to describe the project in more detail, highlighting key aspects of its design and implementation.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
